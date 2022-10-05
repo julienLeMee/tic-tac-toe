@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,24 +8,107 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #000;
+  background-color: rgb(20, 20, 20);
+  color: #fff;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hide {
+  display: none;
 }
 
 #game {
-    background: #fff;
-    width: 90%;
-    height: 90%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 300px;
+  margin: 36px;
 }
 
 .cell {
-    width: 100;
-    height: 100%;
-    border: 1px solid #000;
+  border: 1px solid #fff;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+#cell-0 {
+  border-top: none;
+  border-left: none;
+}
+
+#cell-1 {
+  border-top: none;
+}
+
+#cell-2 {
+  border-top: none;
+  border-right: none;
+}
+
+#cell-3 {
+  border-left: none;
+}
+
+#cell-5 {
+  border-right: none;
+}
+
+#cell-6 {
+  border-bottom: none;
+  border-left: none;
+}
+
+#cell-7 {
+  border-bottom: none;
+}
+
+#cell-8 {
+  border-bottom: none;
+  border-right: none;
+}
+
+.playerX {
+  color: #f19a3e;
+}
+
+.playerO {
+  color: #8EDCE6;
+}
+
+.reset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+#reset {
+  background-color: #f19a3e;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.clicked {
+  background-color: #f19a3e;
+  transition: 0.3s ease-in-out;
 }
