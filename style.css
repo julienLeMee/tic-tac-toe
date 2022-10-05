@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 64px;
   cursor: pointer;
 }
 
@@ -101,6 +101,7 @@ body {
 #reset {
   background-color: #f19a3e;
   color: #fff;
+  width: 90px;
   padding: 8px;
   border-radius: 8px;
   border: none;
@@ -108,7 +109,24 @@ body {
   font-size: 16px;
 }
 
-.clicked {
+#reset:hover {
+  background-color: #ee8719;
+}
+
+.orange-player {
   background-color: #f19a3e;
   transition: 0.3s ease-in-out;
+}
+
+.blue-player {
+  background-color: #8EDCE6;
+  transition: 0.3s ease-in-out;
+}
+
+#winner {
+  font-size: 16px;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
