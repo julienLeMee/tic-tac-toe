@@ -57,8 +57,5 @@ function checkWinner() {
 }
 
 reset.addEventListener('click', () => {
-  // recharger la page
   location.reload();
 });
-
-// jouer chacun son tour : X puis O puis X puis O :

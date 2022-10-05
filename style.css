@@ -22,10 +22,6 @@ body {
   align-items: center;
 }
 
-.hide {
-  display: none;
-}
-
 #game {
   margin: 0 auto;
   display: grid;
@@ -82,13 +78,13 @@ body {
   border-right: none;
 }
 
-.playerX {
+/* .playerX {
   color: #f19a3e;
 }
 
 .playerO {
   color: #8EDCE6;
-}
+} */
 
 .reset {
   display: flex;
@@ -112,7 +108,7 @@ body {
 #reset:hover {
   background-color: #ee8719;
 }
-
+/*
 .orange-player {
   background-color: #f19a3e;
   transition: 0.3s ease-in-out;
@@ -121,7 +117,7 @@ body {
 .blue-player {
   background-color: #8EDCE6;
   transition: 0.3s ease-in-out;
-}
+} */
 
 #winner {
   font-size: 16px;
